@@ -212,9 +212,11 @@ iframe{
   background-color: rgb(255,253,242);
 }
 .foot .container{
-  background-image: url(assets/handshake.jpg);
-  background-color: rgba(0,0,0,0.4);
+  background-image: url(./assets/handshake.jpg);
+  width: 100%;
+  background-color: rgba(0,0,0,0.4); 
   background-blend-mode: overlay;
+  background-position: center;
   background-size: cover;
   border-radius: 15px;
   height: 313px;
