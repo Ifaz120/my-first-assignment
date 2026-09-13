@@ -31,6 +31,16 @@ nav .logo {
   border: 1px solid black;
   border-radius: 10px;
   padding: 17px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.right a:hover {
+  background-color: rgb(13, 19, 33);
+  color: white;
+  border-color: rgb(13, 19, 33);
+  box-shadow: 0 6px 16px rgba(13, 19, 33, 0.25);
+  transform: translateY(-2px);
 }
 
 .banner {
@@ -69,6 +79,14 @@ nav .logo {
   padding: 21px 24px;
   background-color: rgb(13, 19, 33);
   border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.banner a:hover {
+  background-color: rgb(32, 42, 68);
+  box-shadow: 0 8px 20px rgba(13, 19, 33, 0.35);
+  transform: translateY(-2px);
 }
 
 .banner img {
@@ -127,6 +145,17 @@ main .caption h2 {
   font-weight: 600;
   border: 1px solid black;
   padding: 12px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.texts .btn:hover {
+  background-color: #0D1321;
+  color: white;
+  border-color: #0D1321;
+  box-shadow: 0 6px 16px rgba(13, 19, 33, 0.2);
+  transform: translateY(-2px);
 }
 
 .card-1 .texts {
@@ -181,6 +210,11 @@ iframe{
   font-size: 32px;
   font-weight: bold;
 }
+.learning h3{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
 .skill img{
   width: 56px;
   height: 56px;
@@ -197,6 +231,18 @@ iframe{
 .skill a{
   font-weight: bold;
   color: #0D1321;
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #0D1321;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.skill a:hover{
+  background-color: #0D1321;
+  color: white;
+  box-shadow: 0 6px 16px rgba(13, 19, 33, 0.2);
+  transform: translateY(-2px);
 }
 .skill-card{
   padding: 40px;
@@ -210,7 +256,15 @@ iframe{
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  margin-bottom: 40px;
+}
+
+.target-cards:last-child{
   margin-bottom: 110px;
+}
+
+.target-cards.center-two{
+  justify-content: center;
 }
 
 .css{
@@ -219,6 +273,74 @@ iframe{
 .jsc{
   background-color: rgb(255,253,242);
 }
+
+/* New skill card colors: what I know */
+.react{
+  background-color: rgb(224,247,250);
+}
+.mongo{
+  background-color: rgb(224,250,231);
+}
+.node{
+  background-color: rgb(224,240,214);
+}
+
+/* New skill card colors: what I'm learning now */
+.express{
+  background-color: rgb(240,240,240);
+}
+.nextjs{
+  background-color: rgb(225,225,225);
+}
+
+.projects h3{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.project-cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 110px;
+}
+.project-card{
+  background-color: rgb(250, 250, 251);
+  border: 1px solid rgba(13,19,33,0.1);
+  border-radius: 15px;
+  padding: 32px;
+  max-width: 500px;
+  flex: 1;
+}
+.project-card h4{
+  font-size: 22px;
+  font-weight: bold;
+  color: #0D1321;
+  margin-bottom: 12px;
+}
+.project-card p{
+  color: #0D1321;
+  margin-bottom: 24px;
+}
+.project-card .btn{
+  text-decoration: none;
+  font-size: 18px;
+  color: #0D1321;
+  font-weight: 600;
+  border: 1px solid black;
+  padding: 12px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.project-card .btn:hover{
+  background-color: #0D1321;
+  color: white;
+  border-color: #0D1321;
+  box-shadow: 0 6px 16px rgba(13, 19, 33, 0.2);
+  transform: translateY(-2px);
+}
+
 .foot .container{
   background-image: url(./assets/handshake.jpg);
   width: 100%;
@@ -227,7 +349,8 @@ iframe{
   background-position: center;
   background-size: cover;
   border-radius: 15px;
-  height: 313px;
+  min-height: 313px;
+  padding: 56px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,16 +375,30 @@ iframe{
   margin-bottom: 24px;
 
 }
-.btns{
+.support-form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
   max-width: 685px;
+  align-items: center;
+}
+.btns{
+  width: 100%;
   display: flex;
   gap: 16px;
 }
 .btns input{
-  width: 548px;
+  flex: 1;
+  min-width: 0;
   padding: 20px;
   border: none;
   border-radius: 15px;
+  font-family: azeret mono;
+}
+.support-box button{
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .support-box button{
   background-color: white;
@@ -270,6 +407,13 @@ iframe{
   font-weight: 600;
   font-size: 20px;
   padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.support-box button:hover{
+  background-color: rgb(230,230,230);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
 }
 .media p{
   font-size: 20px;
